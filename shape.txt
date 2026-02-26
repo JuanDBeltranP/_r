@@ -1,0 +1,14 @@
+my_reports_repo/
+  scripts/
+    run_reports.py
+    run_reports.sh
+  outputs/
+    latest/
+      honduras_reports_latest.csv
+      honduras_reports_errors_latest.csv
+      preflight_latest.csv
+    historical/
+      honduras_reports_historical.csv
+      processed_files.csv
+  logs/
+    run_reports.log
