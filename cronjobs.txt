@@ -3,4 +3,4 @@
 # ==========================================
 
 # Every 10 minutes
-*/10 * * * * /bin/bash /Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.sh >> /Users/juanbeltran/Developer/Honduras_coffee/_r/logs/cron.log 2>&1
+*/5 * * * * /bin/bash /Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.sh >> /Users/juanbeltran/Developer/Honduras_coffee/_r/logs/cron.log 2>&1
