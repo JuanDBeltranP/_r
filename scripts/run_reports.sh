@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_ed25519 -o IdentitiesOnly=yes"
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -28,8 +29,10 @@ conda activate CCS
 
 python "$REPO_DIR/scripts/run_reports.py" >> "$LOG_DIR/run_reports.log" 2>&1
 
+# Git commit/push only if there are changes
 if [[ -n "$(git status --porcelain)" ]]; then
   git add -A
   git commit -m "Auto update reports $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
-  git push || echo "git push failed: $(date)" >> "$LOG_DIR/run_reports.log"
+  export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_ed25519 -o IdentitiesOnly=yes"
+  git push || echo "git push failed at $(date)" >> "$LOG_DIR/run_reports.log"
 fi
