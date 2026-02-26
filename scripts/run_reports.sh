@@ -6,9 +6,12 @@ LOG_DIR="$REPO_DIR/logs"
 mkdir -p "$LOG_DIR"
 
 cd "$REPO_DIR"
+echo "REPO_DIR=$REPO_DIR"
+echo "LOG_DIR=$LOG_DIR"
+echo "Writing log to: $LOG_DIR/run_reports.log"
 
 # Run inside conda env WITHOUT needing "conda activate"
-conda run -n CCS python "$REPO_DIR/scripts/run_reports.py" >> "$LOG_DIR/run_reports.log" 2>&1
+# conda run -n CCS python "$REPO_DIR/scripts/run_reports.py" >> "$LOG_DIR/run_reports.log" 2>&1
 
 # Git commit/push only if there are changes
 if [[ -n "$(git status --porcelain)" ]]; then
