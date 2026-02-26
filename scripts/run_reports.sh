@@ -31,5 +31,5 @@ python "$REPO_DIR/scripts/run_reports.py" >> "$LOG_DIR/run_reports.log" 2>&1
 if [[ -n "$(git status --porcelain)" ]]; then
   git add -A
   git commit -m "Auto update reports $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
-  git push
+  git push || echo "git push failed: $(date)" >> "$LOG_DIR/run_reports.log"
 fi
