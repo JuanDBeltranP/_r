@@ -3371,3 +3371,5 @@ No eligible PDFs to process this run.
   df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 ✅ [exporttegusTEST@gmail.com] 2026-02-26T16-59 Boletin Estadistico Comercialización TESTTESTTEST 26-02-2026.pdf: 12 rows
 Saved latest + appended historical. Historical file: /Users/juanbeltran/Developer/Honduras_coffee/_r/outputs/historical/honduras_reports_historical.csv
+===== Run started Thu Feb 26 12:20:00 GMT 2026 =====
+No eligible PDFs to process this run.
