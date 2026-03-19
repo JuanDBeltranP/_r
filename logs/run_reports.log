@@ -6172,3 +6172,11 @@ No eligible PDFs to process this run.
 No eligible PDFs to process this run.
 ===== Run started Thu Mar 19 18:50:25 GMT 2026 =====
 No eligible PDFs to process this run.
+===== Run started Thu Mar 19 19:16:14 GMT 2026 =====
+/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py:253: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py:253: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+✅ 2026-03-19T14-57 [exporttegus@gmail.com] Boletín Estadístico IHCAFE al 19 de Marzo de 2026.pdf: 12 rows
+✅ [exporttegus@gmail.com] 2026-03-19T14-57 Boletin Estadistico Comercialización 19-03-2026.pdf: 12 rows
+Saved latest + appended historical. Historical file: /Users/juanbeltran/Developer/Honduras_coffee/_r/outputs/historical/honduras_reports_historical.csv
