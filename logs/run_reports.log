@@ -7139,3 +7139,5 @@ Saved latest + appended historical. Historical file: /Users/juanbeltran/Develope
   df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 ✅ [exporttegus@gmail.com] 2026-03-26T14-57 Boletin Estadistico Comercialización 26-03-2026.pdf: 12 rows
 Saved latest + appended historical. Historical file: /Users/juanbeltran/Developer/Honduras_coffee/_r/outputs/historical/honduras_reports_historical.csv
+===== Run started Thu Mar 26 19:45:00 GMT 2026 =====
+No eligible PDFs to process this run.
