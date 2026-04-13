@@ -10178,3 +10178,9 @@ No eligible PDFs to process this run.
 git push failed at Mon Apr 13 19:45:05 BST 2026
 ===== Run started Mon Apr 13 20:00:00 BST 2026 =====
 No eligible PDFs to process this run.
+git push failed at Mon Apr 13 20:00:11 BST 2026
+===== Run started Mon Apr 13 20:15:00 BST 2026 =====
+/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py:253: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+✅ 2026-04-13T14-58 [exporttegus@gmail.com] Boletín Estadístico IHCAFE al 13 de Abril de 2026.pdf: 12 rows
+Saved latest + appended historical. Historical file: /Users/juanbeltran/Developer/Honduras_coffee/_r/outputs/historical/honduras_reports_historical.csv
