@@ -10824,3 +10824,6 @@ git push failed at Fri Apr 24 18:31:44 BST 2026
 ✅ 2026-04-24T14-57 [exporttegus@gmail.com] Boletín Estadístico IHCAFE al 24 de Abril de 2026.pdf: 12 rows
 ✅ [exporttegus@gmail.com] 2026-04-24T14-57 Boletin Estadistico Comercialización 24-04-2026.pdf: 12 rows
 Saved latest + appended historical. Historical file: /Users/juanbeltran/Developer/Honduras_coffee/_r/outputs/historical/honduras_reports_historical.csv
+git push failed at Fri Apr 24 22:16:49 BST 2026
+===== Run started Sat Apr 25 00:05:57 BST 2026 =====
+No eligible PDFs to process this run.
