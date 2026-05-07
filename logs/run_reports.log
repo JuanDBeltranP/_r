@@ -11974,3 +11974,62 @@ No eligible PDFs to process this run.
 No eligible PDFs to process this run.
 ===== Run started Thu May  7 16:30:00 BST 2026 =====
 No eligible PDFs to process this run.
+===== Run started Thu May  7 20:00:00 BST 2026 =====
+Traceback (most recent call last):
+  File "/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py", line 511, in <module>
+    run_once(
+  File "/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py", line 346, in run_once
+    folder_id = find_folder_id_by_name(service, folder_name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py", line 60, in find_folder_id_by_name
+    resp = service.files().list(q=q, fields="files(id, name)").execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/http.py", line 923, in execute
+    resp, content = _retry_request(
+                    ^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/http.py", line 222, in _retry_request
+    raise exception
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/http.py", line 191, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/google_auth_httplib2.py", line 216, in request
+    response, content = self.http.request(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/httplib2/__init__.py", line 1727, in request
+    (response, content) = self._request(
+                          ^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/httplib2/__init__.py", line 1447, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/httplib2/__init__.py", line 1399, in _conn_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+===== Run started Thu May  7 21:31:18 BST 2026 =====
+/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py:253: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py:253: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+✅ 2026-05-07T14-57 [exporttegus@gmail.com] Boletín Estadístico IHCAFE al 07 de Mayo de 2026.pdf: 12 rows
+✅ [exporttegus@gmail.com] 2026-05-07T14-57 Boletin Estadistico Comercialización 07-05-2026.pdf: 12 rows
+Saved latest + appended historical. Historical file: /Users/juanbeltran/Developer/Honduras_coffee/_r/outputs/historical/honduras_reports_historical.csv
