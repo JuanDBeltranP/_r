@@ -12166,3 +12166,57 @@ No eligible PDFs to process this run.
 No eligible PDFs to process this run.
 ===== Run started Sat May  9 10:00:06 BST 2026 =====
 No eligible PDFs to process this run.
+git push failed at Sat May  9 10:00:11 BST 2026
+===== Run started Sat May  9 10:30:00 BST 2026 =====
+Traceback (most recent call last):
+  File "/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py", line 511, in <module>
+    run_once(
+  File "/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py", line 366, in run_once
+    pdfs = list_recent_pdfs_in_folder(service, folder_id, after_dt=after_dt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py", line 96, in list_recent_pdfs_in_folder
+    ).execute()
+      ^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/http.py", line 923, in execute
+    resp, content = _retry_request(
+                    ^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/http.py", line 222, in _retry_request
+    raise exception
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/http.py", line 191, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/google_auth_httplib2.py", line 216, in request
+    response, content = self.http.request(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/httplib2/__init__.py", line 1727, in request
+    (response, content) = self._request(
+                          ^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/httplib2/__init__.py", line 1447, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/httplib2/__init__.py", line 1399, in _conn_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+===== Run started Sat May  9 10:49:05 BST 2026 =====
+No eligible PDFs to process this run.
