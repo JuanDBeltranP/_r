@@ -17981,3 +17981,6 @@ git push failed at Mon Jun  8 19:35:40 BST 2026
 ✅ 2026-06-08T14-57 [exporttegus@gmail.com] Boletín Estadístico IHCAFE al 08 de Junio de 2026.pdf: 12 rows
 ✅ [exporttegus@gmail.com] 2026-06-08T14-57 Boletin Estadistico Comercialización 08-06-2026.pdf: 12 rows
 Saved latest + appended historical. Historical file: /Users/juanbeltran/Developer/Honduras_coffee/_r/outputs/historical/honduras_reports_historical.csv
+git push failed at Mon Jun  8 20:50:41 BST 2026
+===== Run started Mon Jun  8 22:05:27 BST 2026 =====
+No eligible PDFs to process this run.
