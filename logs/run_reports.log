@@ -19742,3 +19742,6 @@ git push failed at Thu Jul  2 20:15:32 BST 2026
   df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 ✅ [exporttegus@gmail.com] 2026-07-02T14-57 Boletin Estadistico Comercialización 02-07-2026.pdf: 12 rows
 Saved latest + appended historical. Historical file: /Users/juanbeltran/Developer/Honduras_coffee/_r/outputs/historical/honduras_reports_historical.csv
+git push failed at Thu Jul  2 21:52:18 BST 2026
+===== Run started Thu Jul  2 22:51:39 BST 2026 =====
+No eligible PDFs to process this run.
