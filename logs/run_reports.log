@@ -21236,3 +21236,8 @@ No eligible PDFs to process this run.
   df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 ✅ 2026-07-23T14-57 [exporttegus@gmail.com] Boletín Estadístico IHCAFE al 23 de Julio de 2026.pdf: 12 rows
 Saved latest + appended historical. Historical file: /Users/juanbeltran/Developer/Honduras_coffee/_r/outputs/historical/honduras_reports_historical.csv
+===== Run started Thu Jul 23 20:30:00 BST 2026 =====
+/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py:253: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+  df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+✅ [exporttegus@gmail.com] 2026-07-23T14-57 Boletin Estadistico Comercialización 23-07-2026.pdf: 12 rows
+Saved latest + appended historical. Historical file: /Users/juanbeltran/Developer/Honduras_coffee/_r/outputs/historical/honduras_reports_historical.csv
