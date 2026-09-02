@@ -25868,3 +25868,64 @@ No eligible PDFs to process this run.
 git push failed at Wed Sep  2 01:45:06 BST 2026
 ===== Run started Wed Sep  2 04:15:01 BST 2026 =====
 No eligible PDFs to process this run.
+git push failed at Wed Sep  2 04:15:06 BST 2026
+===== Run started Wed Sep  2 05:17:25 BST 2026 =====
+Traceback (most recent call last):
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 579, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 546, in _read_next_chunk_size
+    return int(line, 16)
+           ^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 16: b''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 595, in _read_chunked
+    while (chunk_left := self._get_chunk_left()) is not None:
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 581, in _get_chunk_left
+    raise IncompleteRead(b'')
+http.client.IncompleteRead: IncompleteRead(0 bytes read)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py", line 511, in <module>
+    run_once(
+  File "/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py", line 366, in run_once
+    pdfs = list_recent_pdfs_in_folder(service, folder_id, after_dt=after_dt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/Developer/Honduras_coffee/_r/scripts/run_reports.py", line 96, in list_recent_pdfs_in_folder
+    ).execute()
+      ^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/http.py", line 923, in execute
+    resp, content = _retry_request(
+                    ^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/googleapiclient/http.py", line 191, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/google_auth_httplib2.py", line 216, in request
+    response, content = self.http.request(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/httplib2/__init__.py", line 1727, in request
+    (response, content) = self._request(
+                          ^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/httplib2/__init__.py", line 1447, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/site-packages/httplib2/__init__.py", line 1428, in _conn_request
+    content = response.read()
+              ^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 473, in read
+    return self._read_chunked(amt)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanbeltran/miniforge3/envs/CCS/lib/python3.12/http/client.py", line 607, in _read_chunked
+    raise IncompleteRead(b''.join(value)) from exc
+http.client.IncompleteRead: IncompleteRead(38 bytes read)
+===== Run started Wed Sep  2 07:00:01 BST 2026 =====
+No eligible PDFs to process this run.
